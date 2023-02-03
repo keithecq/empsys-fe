@@ -27,6 +27,7 @@ export class empResponse {
 export class EmployeeComponent implements OnInit {
   employeeList: Employee[];
   employeeRes: empResponse;
+  displayedColumns: string[] = ['id', 'login', 'name', 'salary'];
   private httpClient: HttpClient;
 
   constructor(
