@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { AfterViewInit, ViewChild, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -10,6 +10,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { HttpClientModule } from '@angular/common/http';
 import { EmployeeComponent } from '../components/employee/employee.component';
 import { MatTableModule } from '@angular/material/table';
+import {MatPaginator} from '@angular/material/paginator';
+import {MatTableDataSource} from '@angular/material/table';
 
 @NgModule({
   declarations: [
