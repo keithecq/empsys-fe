@@ -1,0 +1,19 @@
+<div class="main-toolbar">
+    <mat-toolbar color="primary">
+        <mat-toolbar-row>
+          <span>Employee System</span>
+          <span class="example-spacer"></span>
+          <input type="file" class="upload-csv" (change)="onFileSelected($event)" #fileUpload>
+          <div class="file-upload">
+
+            {{fileName || "No file uploaded yet."}}
+         
+             <button mat-mini-fab color="primary" class="upload-btn"
+               (click)="fileUpload.click()">
+                 <mat-icon>attach_file</mat-icon>
+             </button>
+         </div>
+        </mat-toolbar-row>
+    </mat-toolbar>  
+</div>
+  
